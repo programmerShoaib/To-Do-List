@@ -12,9 +12,11 @@
         <label for="description">Description</label>
         <input type="text" name="description" id="description" placeholder="Enter description">
         <label for="task">Task</label>
-        <textarea name="task" id="task" placeholder="Enter task">
-        <button type="submit">Add</button>
+        <textarea name="task" id="task" placeholder="Enter task"></textarea>
+        <button type="button" onclick="addTask()">Add</button>
     </form>
+    <ul id="task-list">
+    </ul>
     <script src="script.js"></script>
 </body>
 </html>
