@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name ="description" content="To-Do-List" author="Shoaib">
-    <title>To-Do-List</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>To-Do-List</h1>
-    <ul>
-        
-    </ul>
+    <h1>To Do List</h1>
+    <table id="task-list">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>task</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="task-list-body">
 
-    <form>
-        <input type="text" placeholder="Enter a new item">
-        <button type="submit">Add</button>
+        </tbody>
+    </table>
+    <form action="#">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" placeholder="Enter title">
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" placeholder="Enter description">
+        <label for="task">Task</label>
+        <textarea name="task" id="task" placeholder="Enter task"></textarea>
+        <button type="button" onclick="addTask()">Add</button>
     </form>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script src="script.js"></script>
 </body>
 </html>
